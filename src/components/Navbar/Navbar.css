@@ -1,0 +1,77 @@
+.nav{
+    background: #FFFFFF;
+     padding: 1px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(8, 8, 8);
+    position: relative;
+    height: 70px;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.logo {
+    font-weight: 600;
+    font-size: 25px;
+    color: #cf0a0a;
+    margin-left: 25px;
+  }
+  .fa-servicestack{
+    font-weight: 600;
+    font-size: 140%;
+    color: #cf0a0a;
+    
+  }
+  
+  .logo font {
+    color: #004387;
+    font-size: 20px;
+  }
+  .navlink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 6px; */
+    /* background: #991265; */
+    height: 100%;
+   
+
+  }
+  .navlink li{
+    margin: 0px 10px;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #252D37;
+    font-weight: 400;
+    font-size: 120%;
+  }
+  .userProfile {
+    display: flex;
+
+  }
+  .navlink li i {
+    text-decoration: none;
+    background:none;
+    color: rgb(69, 87, 209);
+  }
+  .navlink li i:hover{
+    color: #991265;
+  }
+  .fa-circle-user{
+    font-size: x-large;
+    margin-top: 4px;
+  
+  }
+  .navlink small{
+    position: relative;
+    font-size: 12px;
+    font-weight: bolder;
+    top: 7px;
+    margin-left: 5px;
+    color: #991265
+  }
+  .navlink span{
+    position: relative;
+    left: -15px;
+  }

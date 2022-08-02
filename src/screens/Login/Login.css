@@ -1,0 +1,99 @@
+.login_page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 2px 20px;
+    background: #ffff;
+} 
+.login_header{
+    width: 90%;
+    height: 50px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.login_header p{
+    background-color: rgb(213, 190, 190);
+    padding: 2px 20px 10px 20px;
+    height: 100%;
+    color: rgb(255, 0, 76);
+    float: right;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.login_home{
+    height: 450px;
+    width: 750px;
+    margin:20px 50px;
+    float: left;
+    border-radius: 10px;  
+}
+.login_home img{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.login_form{
+    width: 350px;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px 40px;
+    float: right;
+}
+.login_head{
+    margin-bottom: 30px;
+
+}
+.login_head h4{
+  margin-left: 40px;
+  color: #1b75bc;
+}
+
+.login_username {
+      padding: 4px 0px;
+    background: #E6E6E6;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: #4a4949;
+     display: flex;
+     align-items: center;
+    width: 270px;
+
+}
+.login_username input{
+    border: none;
+    background: none;
+    outline: none;
+    color: #553951;
+    padding: 5px 10px;
+}
+.login_username i{
+    border: none;
+    background: none;
+    outline: none;
+    color: #2a3438;
+
+    padding: 5px;
+    margin-left: 15px;
+}
+.login_button{
+    padding: 4px 0px;
+    background: #53bde4;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 270px;
+}
+.login_button button{
+  border: none;
+  background: none;
+  color: white;
+  width: 100%;
+  padding: 5px;
+
+}
+.login_para{
+    margin-top: 8px;
+    color: #111130;
+
+}

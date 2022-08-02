@@ -1,0 +1,122 @@
+.Num_crew{
+    position: relative;
+    /* padding-left: 10px; */
+    text-align: center;
+}
+.crewAssign{
+    position: relative;
+    padding-left:25px; 
+}
+.crewAssign button{
+border: none;
+background: none;
+
+}
+.viewRost button{
+    background: #0e88bd;
+    padding: 5px 10px;
+    font-size: x-small;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.rosterTable{
+    background-color: rgb(234, 244, 244);
+}
+.rosterTable tr:nth-child(even){
+   background-color: rgb(115, 175, 232);
+   color: rgb(255, 255, 255);
+}
+.rosterTable tr:nth-child(even) td{
+   background-color: rgb(115, 175, 232);
+     
+}
+
+.rosterTable button{
+/* background-color: white; */
+border-radius: 10px;
+padding: 2px 8px; 
+margin-left: 5px;
+}
+.rosterTable a{
+    text-decoration: none;
+    color: rgb(5, 41, 141);
+    font-weight: bolder;
+    font-size: large;
+}
+.rosterTable span{
+    margin-right: 20px;
+}
+
+.rosterHeader{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.rosterSearch{
+    width: 170px;
+}
+.rosterSearch input{
+    width: 70%;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    background: none;
+}
+.rosterSearch button{
+     padding: 2px 5px 1px 5px;
+     border-radius: 10px;
+     color: rgb(87, 87, 232);
+     border: none;
+     
+}
+.rosterSearchFilter{
+    background-color: rgb(244, 240, 240);
+    height: 30px;
+    margin-top: 22px;
+    border: 1px solid rgb(87, 87, 232);
+    border-radius: 10px;
+}
+.rosterFilter{
+    display: flex;
+}
+.rosterFilter li{
+    list-style-type: none;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #004387;
+}
+.filterDate{
+    display: block;
+}
+.filterDate input{
+    padding:2px 8px;
+    border: 1px solid rgb(87, 87, 232);
+    background-color: rgb(244, 240, 240);
+    border-radius: 10px;
+    outline: none;
+}
+.filterFlight input{
+   width: 130px;
+}
+.filterFlight{
+    margin-left: 40px;
+}
+.filterFlight input{
+    padding:2px 8px;
+    border: 1px solid rgb(87, 87, 232);
+    background-color: rgb(244, 240, 240);
+    border-radius: 10px;
+    outline: none;
+    margin-right: 5px;
+
+}
+.filterFlight button{
+    padding:2px 8px;
+    margin-left: 10px;
+    border: 1px solid rgb(81, 124, 225);
+    background-color: rgb(81, 124, 225);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}

@@ -1,0 +1,40 @@
+.fa-circle-plus{
+    font-size: 180%;
+    color: blue;
+    padding: 8px;
+    cursor: pointer;    
+}
+.addCrewHeader{
+    display: flex;
+    margin-bottom: 20px;
+}
+.SearshFlightNo{
+    display: flex;
+   
+}
+.addCrewHeader input{
+    margin-right: 30px;
+    outline: none;
+    padding: 3px 8px;
+    font-size: 14px;
+    background-color: rgb(243, 238, 238);
+    border: 1px solid rgb(29, 29, 172);
+    border-radius: 10px;
+}
+.addCrewHeader button{
+    margin: 0px 50px;
+    outline: none;
+    padding: 3px 8px;
+    font-size: 14px;
+    background-color: rgb(243, 238, 238);
+    border: 1px solid rgb(29, 29, 172);
+    border-radius: 10px;
+}
+.addCrewHeader label{
+    margin-right: 8px;
+    columns: rgb(3, 44, 106);
+    font-weight: bolder;
+}
+/* .addReq{
+    text-align: center;
+} */

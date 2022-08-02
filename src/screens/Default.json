@@ -1,0 +1,222 @@
+{
+    "DefaultCrewData":[
+        {"title":"Flight No",
+        "FlightNo":"Flight No"},
+    
+        {"title":"Origin",
+        "Origin":"Origin"},
+    
+        {"title":"Destination",
+         "Destination":"Destination"},
+    
+        {"title":"Date",
+         "Date":"Date"},
+    
+        {"title":"Departure Time",
+         "DepartureTime":"Departure Time"},
+    
+        {"title":"Arrival Time",
+         "ArrivalTime":"Arrival Time"},
+         {"title":"Max crew",
+            "Max crew":"Max crew"},
+
+         {"title":"Crew Assigned",
+        "Crew Assigned":"Crew Assigned"}
+               
+    ],
+    "Form":{      
+            "FirstName":{
+                "type":"text",
+                "name":"firstname",
+                "label":"First Name"
+            },
+            "LastName":{
+                "type":"text",
+                "name":"lastname",
+                "label":"Last Name"
+            },
+            "Dop":{
+                "type":"date",
+                "name":"dob",
+                "label":"Date Of Birth"
+            },
+            "UserId":{
+                "type":"text",
+                "name":"userId",
+                "label":"User ID"
+            },
+            "Gender":{
+                "type":"text",
+                "name":"gender",
+                "label":"Gender"
+            },
+            "Username":{
+                "type":"text",
+                "name":"username",
+                "label":"Username"
+            },
+            "Password":{
+                "type":"password",
+                "name":"password",
+                "label":"Password"
+            },
+            "ConfirmPassword":{
+                "type":"password",
+                "name":"confirmPassword",
+                "label":"Confirm Password"
+            },
+            "Role":{
+                "label":"Role"
+            },
+            "Lifespan":{
+                "type":"date",
+                "label":"User Access Lifespan"
+            },
+            
+            "Status":{
+                "type":"text",
+                "name":"status",
+                "label":"Status"
+            },
+            "Primarynumber":{
+                "type":"text",
+                "name":"PrimaryNumber",
+                "label":"Primary Number"
+            },
+            "SecondaryNumber":{
+                "type":"text",
+                "name":"secondaryNumber",
+                "label":"Secondary Number"
+            },
+            "ServiceArea":{
+                "type":"text",
+                "name":"serviceArea",
+                "label":"Service Area"
+            },
+            "shifttimings":{
+                "type":"text",
+                "name":"Shifttimings",
+                "label":"Shift Timings"
+            },
+            "Email":{
+                "type":"email",
+                "name":"emailadress",
+                "label":"Email"
+            },
+            "Addline1":{
+                "type":"text",
+                "name":"addline1",
+                "label":"Addline 1"
+            },
+            "Addline2":{
+                "type":"text",
+                "name":"addline2",
+                "label":"Addline 2"
+            },
+            "City":{
+                "type":"text",
+                "name":"city",
+                "label":"City"
+            },
+            "State":{
+                "type":"text",
+                "name":"state",
+                "label":"State"
+            },
+            "Address":{
+                "label":"Address"
+            },
+            "Addtionreq":{
+                "type":"text",
+                "name":"addtionreq",
+                "label":"Additional Requests"
+            },
+            "MobilNo":{
+                "type":"tel",
+                "name":"mobilNo",
+                "label":"Mobile No"
+            },
+            "Pincode":{
+                "type":"number",
+                "name":"pincode",
+                "label":"Pincode"
+            },
+            "AgencyName":{
+                "type":"text",
+                "name":"agencyName",
+                "label":"Agency Name"
+            },
+            "Location":{
+                "type":"text",
+                "name":"location",
+                "label":"Location"
+            },
+            "NoOfVehicles":{
+                "type":"text",
+                "name":"noOfVehicles",
+                "label":"No of Vehicles"
+            },
+            "NoofDrivers":{
+                "type":"text",
+                "name":"noOfVehicles",
+                "label":"No of Drivers"
+            },
+            "ActivePeriod":{
+                "type":"date",
+                "name":"noOfVehicles",
+                "label":"Active Period"
+            },
+            "ContactNo":{
+                "type":"text",
+                "name":"contactNo",
+                "label":"Contact No"
+            },
+            "EmployeeID":{
+                "type":"text",
+                "name":"employeeID",
+                "label":"Employee ID"
+            },
+            "EmployeeName":{
+                "type":"text",
+                "name":"employeeName",
+                "label":"Employee Name"
+            },
+            "Pickup":{
+                "type":"time",
+                "name":"pickup",
+                "label":"Pickup From Airport"
+            },
+            "DropLocation":{
+                "type":"text",
+                "name":"dropLocation",
+                "label":"Drop Location"
+            }           
+        }, 
+        "Table":{
+             "UserID":"User ID",
+             "EmployeeName":"Employee Name",
+             "Gender":"Gender",
+             "ContactNO":"Contact No",
+             "ViewRoster":"View Roster",
+             "Status":"Status",
+             "ServiceArea":"Service Area",
+             "AssignedCab":"Assigned Cab",
+             "RequestTransport":"Request Transport",
+             "Dates":"Date",
+             "FlightRoute":"Flight Route",
+             "DriverName":"Driver Name",
+             "FlightNo":"Flight No",
+             "CrewMembers":"Crew Members",
+             "FlightDateTime":"Flight Date & Time",
+             "AdditionalRequests":"Additional Requests",
+             "Username":"Username",
+             "Email":"Email",
+             "LastEdited":"Last Edited",
+             "Role":"Role",
+             "Save":"Save/Delete",
+             "NoofVehicles":"No of Vehicles",
+             "NoofDrivers":"No of Drivers",
+             "Location":"Location",
+             "AgencyName":"Agency Name"
+      }    
+}

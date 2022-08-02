@@ -1,0 +1,155 @@
+.editpage_maincontent{
+    width: 70%;
+    /* background:#fefeff; */
+}
+.editpage_search{
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px;
+}
+.editpage_search form{
+    height: 100%;
+    padding: 8px;
+    background: #e1e4e8;
+    text-align: center;
+    border-radius: 5px;
+}
+.editpage_search_filter{
+    display: flex;
+    align-items: center;
+}
+.editpage_Title h5{
+    padding-top: 15px;
+    color: #800087;
+    font-weight: 600;
+}
+.editpage_Addprovider{
+    display: flex;
+    flex-direction: column;
+}
+.editpage_search button{
+    border: none;
+    background: #e1e4e8;
+    padding-right: 10px;
+}
+.editpage_search input{
+    border: none;
+    outline: #e1e4e8;
+    font-size: 15px;
+    background:#e1e4e8 ;
+    
+    /* padding: 1px; */
+}
+.editpage_search a{
+text-decoration: none;
+}
+.editpage_edit{
+    width: 100%;
+    /* margin: auto; */
+}
+.edit{
+    width: 700px;
+    margin:20px auto;
+    /* border: 1px solid rgb(234, 230, 230); */
+    padding: 30px;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19); */
+    /* background-color: #ffff; */
+    border-radius: 6px;
+
+}
+.lifeSpan{
+    display: flex;
+    width: 260px;
+}
+.lifeSpan font{
+    padding: 7px;
+    position: relative;
+    top: 3px;
+    color: rgb(240, 40, 40);
+}
+.lifeSpan input{
+    width: 120px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin:10px 0px 25px 0px;
+    border-bottom: 1px solid #004387;
+}
+.editUser_status{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.editUser_status select{
+    width: 260px;
+    font-size: 15px;
+    margin:10px 0px 25px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #004387;
+    
+}
+.editUser{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.editUser input{
+    width: 260px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    margin:10px 0px 25px 0px;
+    border-bottom: 1px solid #004387;
+    padding-left: 8px;
+    
+}
+.editUser select{
+    width: 260px;
+    font-size: 15px;
+    margin:10px 0px 25px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #004387;
+    
+}
+.editUser_input{
+    display: flex;
+    flex-direction: column;
+    background: none;
+    
+}
+.editUser_in input{
+    width: 260px;
+    font-size: 15px;
+    padding-left: 8px;
+    border: none;
+    background: none;
+    outline: none;
+    margin:10px 0px 25px 0px;
+    border-bottom: 1px solid #004387;
+}
+.edit label{
+    font-weight: bolder;
+    padding-bottom: 5px;
+    color: #004387;
+}
+.editUser_button{
+    display: flex;
+    gap: 150px;
+    margin-top: 20px;
+}
+.editUser_button button{
+    width: 200px;
+    margin-left: 20px;
+    background-color: #0b65c0;
+    border-radius: 10px;
+    border: none;
+}

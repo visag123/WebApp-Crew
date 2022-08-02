@@ -1,0 +1,63 @@
+h4.add-driver {
+    padding: 19px;
+}
+.containeritem {
+    width: 100%;
+    padding: 20px;
+    /* margin-left: 70px; */
+
+}
+form.add-driver-form {
+    width: 100%;
+}
+.rowitem {
+    display: flex;
+}
+.colitem {
+    flex: 1;
+    display: flex;
+}
+.input_js {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 3px;
+    padding-right: 20px;
+}
+.label_js{
+    display: inline-block;
+    width: 216px;
+}
+.colitem:last-child {
+    margin-left: auto;
+}
+.colitem.edittransAddress {
+    flex-direction: column;
+}
+.adress-content {
+    display: flex;
+
+}
+.btn-actions.btn-group.mt-4.rowitem {
+    display: flex;
+    justify-content: left;
+}
+.form-main{
+    display: block;
+    width: 500px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #171d24;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #a7bcd1;
+    appearance: none;
+    border-radius: .25rem;
+    
+}
+
+
+
+

@@ -1,0 +1,83 @@
+.editCrewHome{
+    width: 800px;
+    margin:20px;
+    /* border: 1px solid rgb(234, 230, 230); */
+    padding: 30px;
+    border-radius: 6px;
+}
+.editCrew{
+    display: flex;
+    width: 100%;
+}
+.editCrew input{
+    width: 240px;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 148px;
+    outline: none;
+}
+.editCrew select{
+    width: 240px;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 148px;
+    outline: none;
+}
+.editCrew label{
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #004387;
+
+}
+.editCrewAdd{
+  display: flex;
+  width: 350px;
+  position: relative;
+}
+.editCrewAdd input{
+    width: 100px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+.editCrewMob{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.editCrewMob label{
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #004387;
+
+}
+.editMob input{
+    width: 240px;
+    font-size: 14px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+.editAdd{
+    width: 315px;   
+}
+.editCrewAddress input{
+    margin-bottom: 8px;
+    padding-left: 5px;
+    font-size: 14px;
+    outline: none;
+    
+}
+.editUser_input small{
+    color: red;
+}
+.addcrewTitle h5{
+  
+    margin-top: 30px;
+    color: #7b0381;
+    font-weight: 600;
+    padding-left: 40px;
+}
