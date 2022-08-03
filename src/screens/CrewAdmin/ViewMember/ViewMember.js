@@ -12,7 +12,7 @@ const ViewMember = () => {
   const { getUserId } = useUserAuth();
 
   let value = Default.Table;
-  let {UserID,EmployeeName,Gender,ContactNO,Email,ViewRoster}=value
+  let {UserID,CrewMemberName,Gender,ContactNO,Email,ViewRoster}=value
 
   useEffect(() => {
     getCrewMember();
@@ -55,8 +55,7 @@ const ViewMember = () => {
         <table>
           <thead>
             <tr>
-              <th>{UserID}</th>
-              <th>{EmployeeName}</th>
+              <th>{CrewMemberName}</th>
               <th>{Gender}</th>
               <th>{ContactNO}</th>
               <th>{Email}</th>
@@ -77,7 +76,6 @@ const ViewMember = () => {
             .map((doc) => {
               return (
                 <tr key={doc.id}>
-                  <td >{doc.userId}</td>
                   <td>{doc.firstname}</td>
                   <td>{doc.gender}</td>
                   <td>{doc.mobilNo}</td>

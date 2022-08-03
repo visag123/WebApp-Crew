@@ -23,12 +23,11 @@ const AddCrew = () => {
   const navigate = useNavigate();
   
   let value = Default.Table;
-  let {Gender,EmployeeName,AdditionalRequests,UserID}=value;
+  let {Gender,EmployeeName,AdditionalRequests,CrewMemberName,Dates,FlightNo}=value;
 
   const editHandler = async () => {
     try {
     const docSnap = await UserDataService.getFlightID(usersId);
-      // console.log("the record is :", docSnap.data());
       setGetFlightDetail(docSnap.data());
       setGetFlightNo(docSnap.data().FlightNumber);
       setGetFlightOrigin(docSnap.data().Origin);
@@ -39,8 +38,6 @@ const AddCrew = () => {
         console.log(err);
     }
   };
-
-// console.log(getFlightDetail);
 
   useEffect(() => {
     if (usersId !== undefined && usersId !== "") {
@@ -72,7 +69,6 @@ const AddCrew = () => {
   const crewHandler = async () => {
     try {
     const docSnap = await UserDataService.getAssignCrewID(getCrewMemId);
-      console.log("the record is :", docSnap.data());
       setCrewMember(docSnap.data());
     
     } catch (err) {
@@ -101,31 +97,32 @@ const AddCrew = () => {
 
 const updateFlightNo = async () =>{
 
-  setgetNoOfCrew(getNoOfCrew+1)
-         const addcrew ={
-          NoOfCrew:getNoOfCrew
-         }
+  setgetNoOfCrew(getNoOfCrew + 1);
+  const addcrew = {
+    NoOfCrew: getNoOfCrew,
+  };
 
-         const addflight= {
-           assignflight:getFlightNo,
-           date:todayDate
-          }
-   
-      { checkbox && crewMember.days.push(addflight);
-       console.log(crewMember); 
-      }    
+  const addflight = {
+    assignflight: getFlightNo,
+    date: todayDate,
+  };
+
+  {
+    checkbox && crewMember.days.push(addflight);
+    console.log(crewMember);
+  }    
         
-      const assignCrew=
-        {assignflightNo:getFlightNo,
-          date:todayDate,
-          crewMemberId:crewMember.userId,
-          crewMemberName:crewMember.firstname,
-          Origin:getFlightDetail.Origin,
-          Destination:getFlightDetail.Destination,
-          Departure:getFlightDetail.Departure,
-          Arrival:getFlightDetail.Arrival,
-          ContactNo:crewMember.mobilNo
-        }        
+      const assignCrew = {
+        assignflightNo: getFlightNo,
+        date: todayDate,
+        crewMemberId: crewMember.userId,
+        crewMemberName: crewMember.firstname,
+        Origin: getFlightDetail.Origin,
+        Destination: getFlightDetail.Destination,
+        Departure: getFlightDetail.Departure,
+        Arrival: getFlightDetail.Arrival,
+        ContactNo: crewMember.mobilNo,
+      };        
   try {
     if (getNoOfCrew < getFlightDetail.CrewMember+1 && checkbox === true) {
    
@@ -143,15 +140,16 @@ const updateFlightNo = async () =>{
 }
   return (
     <>
+     <div className="addcrewTitle"><h5>Assign Crew Member to Selected Flights</h5></div>
       <div className="sys-table">
         <div className="addCrewHeader">
           <div className="SearshFlightNo">
-            <Input type="text" label="Flight No" value={getFlightNo} onChange={(e) => setGetFlightNo(e.target.value)}/>
+            <Input type='text' label={FlightNo} value={getFlightNo} onChange={(e) => setGetFlightNo(e.target.value)}/>
           </div>
           <div className="SearshFlightNo">
             <Input
-              type="date"
-              label="Date"
+              type='date'
+              label={Dates.label}
               value={todayDate}
               onChange={(e) => setTodayDate(e.target.value)}
             />
@@ -169,8 +167,7 @@ const updateFlightNo = async () =>{
               <th>
                 <input type="checkbox" />
               </th>
-              <th>{UserID}</th>
-              <th>{EmployeeName}</th>
+              <th>{CrewMemberName}</th>
               <th>{Gender}</th>
               <th className="addReq">{AdditionalRequests}</th>
             </tr>
@@ -185,7 +182,6 @@ const updateFlightNo = async () =>{
               return (
                 <tr key={doc.id}>
                   <td onClick={() => getCrewMemberId(doc.id)}><input type="checkbox" onChange={(e)=> setCheckbox(e.target.checked)}/></td>
-                  <td>{doc.userId}</td>
                   <td className='No_of_crew'>{doc.firstname}</td>
                   <td>{doc.gender}</td>
                   <td >{doc.addtionreq}</td>
