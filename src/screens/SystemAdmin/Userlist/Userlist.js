@@ -16,7 +16,7 @@ const Userlist = () => {
   const { signUp, getUserId } = useUserAuth();
 
   let value = Default.Table;
-  let {Save,Username,LastEdited,Role,Status,Email,UserID}=value;
+  let {Save,Username,LastEdited,Role,Status,Email,UserID,Search}=value;
 
   useEffect(() => {
     getUsers();
@@ -89,6 +89,7 @@ const Userlist = () => {
   
   return (
     <>
+    <div className="addcrewTitle"><h5>Users List</h5></div>
       <div className="head_navbar">
         <div className="header_search">
           <form>
@@ -97,7 +98,7 @@ const Userlist = () => {
             </button>
             <input
               type="text"
-              placeholder="search"
+              placeholder={Search}
               ref={searchinput}
               value={searchUsers}
               onChange={searchHandler}
@@ -124,7 +125,6 @@ const Userlist = () => {
         <table>
           <thead>
             <tr>
-              <th>{UserID}</th>
               <th>{Username}</th>
               <th>{Email}</th>
               <th>{Status}</th>
@@ -147,11 +147,6 @@ const Userlist = () => {
             .map((doc) => {
               return (
                 <tr key={doc.id}>
-                  <td onClick={() => getUserId(doc.id)}>
-                    <Link to="/admin/edit">
-                      {doc.userId === "" ? "NA" : doc.userId}
-                    </Link>
-                  </td>
 
                   <td onClick={() => getUserId(doc.id)}>
                     <Link to="/admin/edit">
