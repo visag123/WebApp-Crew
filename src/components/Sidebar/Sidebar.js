@@ -30,9 +30,7 @@ const Sidebar = () => {
             </Link>
             
              {crew? (<Link to="crew/viewCrew"><li><i className="fa-solid fa-sheet-plastic"></i><small>Crew Roster</small></li></Link>):(
-               trans?( ''):(<li>
-                <i className="fa-solid fa-file-lines"></i> Contacts
-               </li>)
+               trans?( ''):""
              )
               }
                {trans&&(<li>Logistics Arrangements</li>)     
