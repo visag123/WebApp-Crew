@@ -90,9 +90,6 @@ const Login = () => {
         <img src={logo} alt="image" />
       </div>
       <div className="login_form">
-        <div className="login_head">
-          <h4>CREW Login</h4>
-        </div>
         <form onSubmit={loginhandler}>
           <div className="login_username">
             <i className="fa-solid fa-envelope"></i>
