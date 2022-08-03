@@ -1,29 +1,4 @@
 {
-    "DefaultCrewData":[
-        {"title":"Flight No",
-        "FlightNo":"Flight No"},
-    
-        {"title":"Origin",
-        "Origin":"Origin"},
-    
-        {"title":"Destination",
-         "Destination":"Destination"},
-    
-        {"title":"Date",
-         "Date":"Date"},
-    
-        {"title":"Departure Time",
-         "DepartureTime":"Departure Time"},
-    
-        {"title":"Arrival Time",
-         "ArrivalTime":"Arrival Time"},
-         {"title":"Max crew",
-            "Max crew":"Max crew"},
-
-         {"title":"Crew Assigned",
-        "Crew Assigned":"Crew Assigned"}
-               
-    ],
     "Form":{      
             "FirstName":{
                 "type":"text",
@@ -176,10 +151,20 @@
                 "name":"employeeID",
                 "label":"Employee ID"
             },
+            "CrewmemberID":{
+                "type":"text",
+                "name":"crewmemberID",
+                "label":"CrewMember ID"
+            },
             "EmployeeName":{
                 "type":"text",
                 "name":"employeeName",
                 "label":"Employee Name"
+            },
+            "CrewMemberName":{
+                "type":"text",
+                "name":"CrewMemberName",
+                "label":"CrewMember Name"
             },
             "Pickup":{
                 "type":"time",
@@ -190,14 +175,37 @@
                 "type":"text",
                 "name":"dropLocation",
                 "label":"Drop Location"
-            }           
+            },
+            "Dates":{
+                "type":"date",
+                "name":"date",
+                "label":"Date"
+            },
+            "Flightno":{
+                "type":"text",
+                "name":"flightNo",
+                "label":"Flight No"
+            },
+            "Arrivinglocation":{
+                "type":"text",
+                "name":"Arrivinglocation",
+                "label":"Arriving Location"
+            }        
         }, 
+        
         "Table":{
              "UserID":"User ID",
              "EmployeeName":"Employee Name",
+             "CrewMemberName":"CrewMember Name",
              "Gender":"Gender",
              "ContactNO":"Contact No",
              "ViewRoster":"View Roster",
+             "Destination":"Destination",
+             "DepartureTime":"Departure Time",
+             "ArrivalTime":"Arrival Time",
+             "Maxcrew":"Max crew",
+             "CrewAssigned":"Crew Assigned",
+             "Origin":"Origin",
              "Status":"Status",
              "ServiceArea":"Service Area",
              "AssignedCab":"Assigned Cab",
@@ -214,9 +222,11 @@
              "LastEdited":"Last Edited",
              "Role":"Role",
              "Save":"Save/Delete",
+             "Search":"Search",
              "NoofVehicles":"No of Vehicles",
              "NoofDrivers":"No of Drivers",
              "Location":"Location",
              "AgencyName":"Agency Name"
+        
       }    
 }
