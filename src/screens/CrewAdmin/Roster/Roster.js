@@ -94,16 +94,9 @@ const Roster = () => {
 //      }
 //    });
 //  }
-let value = Default.DefaultCrewData
-let [FlightNo,Origin,Destination,CrewMembers]=value
+let value = Default.Table;
+let {FlightNo,DepartureTime,ArrivalTime,Maxcrew,Dates,CrewAssigned,Origin,Destination,Search}=value
 
-const TableTitle=(data)=>{
-  return data.map((doc)=>{
-    return(
-      <th>{doc.title}</th>
-    )
-  })
-}
   return (
     <>   
     <div className="addcrewTitle"><h5>Flight Schedule</h5></div>
@@ -116,13 +109,12 @@ const TableTitle=(data)=>{
             </button>
             <input
               type="text"
-              placeholder="Search"             
+              placeholder={Search}             
               ref={searchinput}
               value={searchUsers}
               onChange={searchHandler}
             />
-            </div>
-            
+            </div>       
           </div>
           <div className="rosterFilter">
             <div className="filterDate">
@@ -134,14 +126,14 @@ const TableTitle=(data)=>{
                 <li>Flight Route</li>
                 <input
                   type="text"
-                  placeholder={Origin.Origin}
+                  placeholder={Origin}
                   value={departure}
                   required
                   onChange={(e) => setDeparture(e.target.value)}
                 />
                 <input
                   type="text"
-                  placeholder={Destination.Destination}
+                  placeholder={Destination}
                   value={arrival}
                   required
                   onChange={(e) => setArrival(e.target.value)}
@@ -156,7 +148,14 @@ const TableTitle=(data)=>{
         <table className="rosterTable">
           <thead>
             <tr>
-              {TableTitle (value)}
+            <th>{FlightNo}</th>
+            <th>{Origin}</th>
+            <th>{Destination}</th>
+            <th>{Dates}</th>
+            <th>{DepartureTime}</th>
+            <th>{ArrivalTime}</th>
+            <th>{Maxcrew}</th>
+            <th>{CrewAssigned}</th>
             </tr>
           </thead>
           <tbody>
