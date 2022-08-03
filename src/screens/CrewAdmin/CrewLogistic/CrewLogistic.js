@@ -21,7 +21,7 @@ const CrewLogistic = () => {
     const navigate = useNavigate();
 
     let value = Default.Table;
-    let {FlightRoute,RequestTransport,EmployeeName,Dates,ContactNO,UserID}=value;
+    let {FlightRoute,RequestTransport,CrewMemberName,Dates,ContactNO,Origin,Destination,Search}=value;
 
     useEffect(() => {
         getFlightroster();
@@ -69,7 +69,7 @@ const CrewLogistic = () => {
             </button>
             <input
               type="text"
-              placeholder="Search"             
+              placeholder={Search}             
               ref={searchinput}
               value={searchUsers}
               onChange={searchHandler}
@@ -87,14 +87,14 @@ const CrewLogistic = () => {
                 <li>Flight Route</li>
                 <input
                   type="text"
-                  placeholder="Origin"
+                  placeholder={Origin}
                   value={departure}
                   required
                   onChange={(e) => setDeparture(e.target.value)}
                 />
                 <input
                   type="text"
-                  placeholder="Destination"
+                  placeholder={Destination}
                   value={arrival}
                   required
                   onChange={(e) => setArrival(e.target.value)}
@@ -109,8 +109,7 @@ const CrewLogistic = () => {
         <table>
           <thead>
             <tr>
-              <th>{UserID}</th>
-              <th>{EmployeeName}</th>
+              <th>{CrewMemberName}</th>
               <th >{FlightRoute}</th>
               <th>{ContactNO}</th>             
               <th>{Dates}</th>
@@ -139,7 +138,6 @@ const CrewLogistic = () => {
             .map((doc) => {
               return (
                 <tr key={doc.id}>
-                  <td >{doc.crewMemberId}</td>
                   <td>{doc.crewMemberName}</td>
                   <td> {doc.Origin} - {doc.Destination}</td>
                   <td>{doc.ContactNo}</td>
