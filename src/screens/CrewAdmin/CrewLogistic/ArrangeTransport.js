@@ -7,23 +7,23 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 const ArrangeTransport = () => {
-    const[employeeId,setEmployeeId] = useState('');
-    const[employeeName,setEmployeeName] = useState('');
+    const[destination,setDestination] = useState('');
+    const[crewMemberName,setCrewMemberName] = useState('');
     const[pickUp,setPickup] = useState('');
     const[dropLocation,setdropLocation] = useState('');
     const { usersId,setUsersid } = useUserAuth();
     const navigate = useNavigate();
 
     let value = Default.Form;
-    let {EmployeeID,EmployeeName,Pickup,DropLocation}=value
+    let {Arrivinglocation,CrewMemberName,Pickup,DropLocation}=value
 
     const editHandler = async () => {
         try {
         const docSnap = await UserDataService.getAssignFlightId(usersId);
           console.log("the record is :", docSnap.data());
-          setEmployeeId(docSnap.data().crewMemberId);
-          setEmployeeName(docSnap.data().crewMemberName);
-          pickUp(docSnap.data().Arrival);
+          setDestination(docSnap.data().Destination);
+          setCrewMemberName(docSnap.data().crewMemberName);
+          setPickup(docSnap.data().Arrival);
       
         } catch (err) {
             console.log(err);
@@ -38,8 +38,8 @@ const ArrangeTransport = () => {
     const submitHandler = async(e) =>{
         e.preventDefault();
         const newProvider = {
-            employeeId,
-            employeeName,
+            crewMemberName,
+            destination,
             pickUp,
             dropLocation
           };
@@ -61,31 +61,31 @@ const ArrangeTransport = () => {
   return (
     <>
     <div className="editpage_maincontent">
-    <div className="addcrewTitle"><h5>Arrange Transport</h5></div>
+    <div className="addcrewTitle"><h5>Make Transport Request</h5></div>
       <div className="editpage_edit">
         <div className="edit">
           <form onSubmit={submitHandler}>
             <div className="editUser">
               <div className="editUser_input"> 
-                <label htmlFor="agencyName">{EmployeeID.label}</label>
+                <label htmlFor="agencyName">{CrewMemberName.label}</label>
                 <Input
-                  type={EmployeeID.type}
+                  type={CrewMemberName.type}
                   id="agencyName"
-                  value={employeeId}
+                  value={crewMemberName}
                   onChange={(e) => {
-                    setEmployeeId(e.target.value);
+                    setCrewMemberName(e.target.value);
                   }}
             
                 />
               </div>
               <div className="editUser_input">
-                <label htmlFor="contactNo">{EmployeeName.label}</label>
+                <label htmlFor="contactNo">{Arrivinglocation.label}</label>
                 <Input
-                  type={EmployeeName.type}
+                  type={Arrivinglocation.type}
                   id="contactNo"
-                  value={employeeName}
+                  value={destination}
                   onChange={(e) => {
-                    setEmployeeName(e.target.value);
+                    setDestination(e.target.value);
                   }}
                 
               />
