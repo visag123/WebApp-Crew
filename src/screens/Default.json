@@ -204,7 +204,7 @@
              "DepartureTime":"Departure Time",
              "ArrivalTime":"Arrival Time",
              "Maxcrew":"Max crew",
-             "CrewAssigned":"Crew Assigned",
+             "AssignCrew":"Assign Crew",
              "Origin":"Origin",
              "Status":"Status",
              "ServiceArea":"Service Area",

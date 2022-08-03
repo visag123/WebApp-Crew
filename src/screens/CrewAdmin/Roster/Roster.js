@@ -95,7 +95,7 @@ const Roster = () => {
 //    });
 //  }
 let value = Default.Table;
-let {FlightNo,DepartureTime,ArrivalTime,Maxcrew,Dates,CrewAssigned,Origin,Destination,Search}=value
+let {FlightNo,DepartureTime,ArrivalTime,Maxcrew,Dates,AssignCrew,Origin,Destination,Search}=value
 
   return (
     <>   
@@ -155,7 +155,7 @@ let {FlightNo,DepartureTime,ArrivalTime,Maxcrew,Dates,CrewAssigned,Origin,Destin
             <th>{DepartureTime}</th>
             <th>{ArrivalTime}</th>
             <th>{Maxcrew}</th>
-            <th>{CrewAssigned}</th>
+            <th>{AssignCrew}</th>
             </tr>
           </thead>
           <tbody>
